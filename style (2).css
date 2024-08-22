@@ -1,0 +1,240 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+    background-color: #1F2039;
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+}
+header{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation a{
+    color:#242424 ;
+    font-weight:800;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left:30px;
+    opacity: 0.5;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+.cta {
+  background: linear-gradient(#8e86b5, #acaeed);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+.cta:hover {
+  background: linear-gradient(#696484, #8788ba);
+  text-decoration: none;
+}
+.main{
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  color: #8e86b5;
+}
+
+section{
+    display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 80px;
+
+}
+
+h1{
+    font-size: 3.5em;
+    color:#A5B4FC ;
+    font-family: Montserrat;
+}
+p{
+    font-size: 1.1em;
+    font-family: Montserrat;
+    color: #F9F8FF;
+}
+
+h2{
+    color: #F9F8FF;
+}
+
+h2 , li{
+    margin: 10px;
+}
+
+ul li{
+        font-size: 1em;
+        color: #F9F8FF;
+        font-family: Montserrat;
+}
+
+.color{
+    color: #A5B4FC;
+    padding: 50px;
+}
+ 
+.a-propos-main{
+    align-items: center;
+}
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  color: #29627e;
+}
+
+.visite{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px 500px ;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+  .grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+  }
+  .portfolio-section-photos {
+    background-color: #1F2039;
+  }
+  
+  .portfolio-section-photos h2 {
+    color: white;
+    margin-bottom: 80px;
+  }
+  
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+  } 
+  .grid-paysages img,
+.grid-portraits img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visite:hover{
+display: flex;
+/* background: white; */
+opacity: 70%;
+
+}
+caption{
+    padding-bottom: 10px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    color:white
+}
+td,th{
+    padding: 15px;
+    border: 1px solid rgb(90, 90, 199);
+    
+}
+.formulaire{
+  position: relative;
+  color: white;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgb(255, 255,255, .5);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.formulaire .form-box{
+  width: 100%;
+  height: 40px; 
+}
+.box-icon{
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+  margin: 30px;
+}
+.box-icon label{
+  position: absolute;
+  top: 50% ;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+
+}
+
+.box-icon input:focus~label
+.box-icon input:valid~label{
+  top: -5px;
+}
+
+.box-icon input{
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+  font-size: 1em;
+  color:#162938;
+  font-weight: 600;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border: 2px solid white;
+  outline: none;
+   cursor:pointer;
+  font-size: 1.1em;
+  color: white;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+button:hover{
+    background: white;
+    color: gray;
+}
+
+  footer{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  footer a{
+    margin-left:10px;
+  }
